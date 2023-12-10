@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('https://i.postimg.cc/tgB4bFWL/1.jpg'); /* Replace 'your-image-url.jpg' with the actual path to your image */
+            background-size: cover; /* Ensure the image covers the entire background */
+            background-position: center; /* Center the image */
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+         </style>
+        </head>
+
+        <body><header>
+        <h1>Hello dear customer,we are glad to see you!</h1>
+        <p>Fill out the form below to get in touch with us.</p>
+         </header
+
+         <!-- The Web-to-Lead form -->
+         <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D06000001SXAv" method="POST">
+
+        <input type="hidden" name="oid" value="00D06000001SXAv">
+        <input type="hidden" name="retURL" value="http://">
+
+        <!-- Uncomment these lines for optional debugging elements -->
+        <!--
+        <input type="hidden" name="debug" value="1">
+        <input type="hidden" name="debugEmail" value="jusup.muktarbek@gmail.com">
+        -->
+
+        <label for="first_name">First Name</label>
+        <input id="first_name" maxlength="40" name="first_name" type="text" required>
+
+        <label for="last_name">Last Name</label>
+        <input id="last_name" maxlength="80" name="last_name" type="text" required>
+        
+        <label for="phone">Phone</label>
+        <input  id="phone" maxlength="40" name="phone" size="20" type="text" required>
+
+
+        <label for="email">Email</label>
+        <input id="email" maxlength="80" name="email" type="email" required>
+
+        <label for="company">Company</label>
+        <input id="company" maxlength="40" name="company" type="text" required>
+
+        <label for="city">City</label>
+        <input id="city" maxlength="40" name="city" type="text" required>
+
+        <label for="state">State/Province</label>
+        <input id="state" maxlength="20" name="state" type="text" required>
+        
+        <label for="description">Description</label>
+        <input id="description" maxlength="500" name="description" type="text" required>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
